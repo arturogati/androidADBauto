@@ -122,49 +122,6 @@ if __name__ == '__main__':
         return l
 
 
-    def volte_on(device):
-        power(device)
-        deblock(device)
-        time.sleep(5)
-        swipe(device)
-        always_enable(device)
-        dump(device)
-        time.sleep(4)
-        push(device)
-        time.sleep(4)
-        xml_search()
-        time.sleep(5)
-        device.shell(l)
-        time.sleep(7)
-        letter(device)
-        time.sleep(4)
-        delete_android(device)
-        delete_comp()
-        time.sleep(5)
-        dump(device)
-        push(device)
-        time.sleep(3)
-        xml_volte1()
-        device.shell(l)
-        time.sleep(3)
-        delete_android(device)
-        delete_comp()
-        time.sleep(5)
-        dump(device)
-        push(device)
-        time.sleep(3)
-        xml_volte1()
-        device.shell(l)
-        time.sleep(3)
-        delete_android(device)
-        delete_comp()
-
-
-
-
-
-
-
     for device in devices:
         print(f'Connected to {device}')
         dump(device)
